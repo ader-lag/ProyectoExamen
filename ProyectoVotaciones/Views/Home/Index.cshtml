@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = null;
+}
+@Styles.Render("~/Content/Homecss")
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/indexjs")
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<body class="center-block">
+    <div id="login">
+        <h3 class="text-center text-white pt-5">Login form</h3>
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" class="form" action="" method="post">
+
+
+                            <div align="center"><img src="~/Content/Pictures/Logo/Oep.png" class="img-circle" width="100"></div>
+
+                            <h3 class="text-center text-info">ELECIONES PRESIDENCIALES</h3>
+                            <h4 class="text-center text-info">BOLIVIA</h4>
+                            <h5 class="text-center text-info">2020 - 2025</h5>
+
+                            <div class="form-group">
+                                <label for="password" class="text-info">Cedula de Identidad:</label><br>
+                                <input type="text" name="password" id="password" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <a class="btn btn-info btn-md" href="@Url.Action("CandidateVicepresidents", "Home")">INGRESAR</a>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
